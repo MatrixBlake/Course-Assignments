@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>UniChat</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+
+<body> 
+<div data-role="page" id="home" data-theme="c">
+
+	<div data-role="content">
+
+		<img src="img/logo.png">
+		<br>
+
+		<h3 style="display: inline;">Nick Name:&nbsp;</h3><p style="display: inline;">Jon Snow</p>
+		<br><br>
+		<h3 style="display: inline;">Personal Description:&nbsp;</h3><p style="display: inline;">I know nothing.</p>
+		<h3>Avatar</h3>
+		<img src="img/Jon Snow.jpg">
+		<br>
+		<br>
+		<a href="#update" data-role="button" data-rel="popup"> Update Profile </a>
+		<br>
+		<br>
+		<a href="index.html" data-role="button" rel="external" style="color: red;"> Log Out </a>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="home.html" rel="external" data-icon="home">Chats</a></li>
+				<li><a href="friend.html" rel="external" data-icon="plus">Friends</a></li>
+				<li><a href="group.html" rel="external" data-icon="grid">Groups</a></li>
+				<li><a href="post.html" rel="external" data-icon="star">Posts</a></li>
+				<li><a href="profile.html" class="ui-btn-active ui-state-persist" rel="external" data-icon="gear">Profile</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+	<div data-role="popup" id="update">
+		<img src="img/Jon Snow.jpg" style="width: 200px;">
+		<a data-role="button" style="margin-top: 10px ">Choose picture</a>
+
+		
+
+		<p style="font-size: 25px; font-weight: bold;" style="margin-top: -15px" >Name</p>
+		<textarea>Jon Snow</textarea>
+
+		
+		<p style="font-size: 25px; font-weight: bold;" style="margin-top: -15px ">Description</p>
+		<textarea>I know nothing.</textarea>
+		<br>
+		<a data-role="button" data-rel="popup" href="#alert" data-position-to="window">Update</a>
+
+		<div data-role="popup" id="alert">
+			<h3>Succeed</h3>
+			<p>Your Profile has been updated.</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+
+		
+
+		<br>
+    </div>
+
+</div><!-- /page -->
+</body>
+</html>

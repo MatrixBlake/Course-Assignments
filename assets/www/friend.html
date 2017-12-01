@@ -1,0 +1,262 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>UniChat</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+
+<body> 
+<div data-role="page" id="home" data-theme="c">
+
+	<div data-role="content">
+
+		<img src="img/logo.png">
+
+		<br>
+		<br>
+
+		<ul data-role="listview" data-filter="true">
+			<li><div style="font-size: 14px; color: gray;">Special Friend</div></li>
+			<li><a href="#detail1" data-rel="popup"> <img src="img/Daenerys Targaryen.jpg"> <h3>Daenerys Targaryen</h3></a> </li>
+			<li><div style="font-size: 14px; color: gray;">Your Friends</div></li>
+			<li><a href="#detail2" data-rel="popup"> <img src="img/Samwell Tarly.jpeg"> <h3>Samwell Tarly</h3></a> </li>
+			<li><a href="#detail4" data-rel="popup"> <img src="img/Tony Stark.jpeg"> <h3>Tony Stark</h3></a> </li>
+			<li><a href="#detail3" data-rel="popup"> <img src="img/Tyrion Lannister.jpg"> <h3>Tyrion Lannister</h3></a> </li>
+
+			<li><div style="font-size: 14px; color: gray;">Recommanded Friends</div></li>
+			<li data-icon="plus"><a href="#new_detail1" data-rel="popup"> <img src="img/Varys.jpg"> <h3>Varys</h3></a> </li>
+			<li data-icon="plus"><a href="#new_detail2" data-rel="popup"> <img src="img/Arya Stark.png"> <h3>Arya Stark</h3></a> </li>
+		</ul>
+
+		<br>
+		<a href="#search" data-role="button" data-rel="popup"> Serch friends </a>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="home.html" rel="external" data-icon="home">Chats</a></li>
+				<li><a href="friend.html" class="ui-btn-active ui-state-persist" rel="external" data-icon="plus">Friends</a></li>
+				<li><a href="group.html" rel="external" data-icon="grid">Groups</a></li>
+				<li><a href="post.html" rel="external" data-icon="star">Posts</a></li>
+				<li><a href="profile.html" rel="external" data-icon="gear">Profile</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+	<div data-role="popup" id="detail1" style="width: 200px;">
+		<img src="img/Daenerys Targaryen.jpg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Daenerys Targaryen</p>
+		<p style="font-size: 25px; font-weight: bold;">Description</p>
+		<p style="font-size: 14px;">Daenerys Stormborn of the House Targaryen, First of Her Name, the Unburt, Queen of the Andals and the First Men, Khaleesi of the Great Grass Sea, Breaker of Chains, and Mother of Dragons.</p>
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">028754893</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">daenerys0123@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">32</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Politics</p>
+		
+
+		<br>
+
+		<a data-role="button" href="chatWithDaenerysTargaryen.html" rel="external">Message</a>
+
+		<br>
+	</div>
+
+	<div data-role="popup" id="detail2">
+		<img src="img/Samwell Tarly.jpeg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Samwell Tarly</p>
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">198247982</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">samwelltarly0000@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">30</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">history</p>
+
+		<br>
+
+		<a data-role="button" href="chatWithSamwellTarly.html" rel="external">Message</a>
+
+		<br>
+	</div>
+
+	<div data-role="popup" id="detail3">
+		<img src="img/Tyrion Lannister.jpg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Tyrion Lannister</p>
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">837261349</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">tyrion0123@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">40</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Politics</p>
+
+		<br>
+
+		<a data-role="button" href="chatWithTyrionLannister.html" rel="external">Message</a>
+
+		<br>
+	</div>
+
+	<div data-role="popup" id="detail4">
+		<img src="img/Tony Stark.jpeg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Tony Stark</p>
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">837281290</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">tony0123@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">55</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">IT</p>
+
+		<br>
+
+		<a data-role="button" href="chatWithTonyStark.html" rel="external">Message</a>
+
+		<br>
+	</div>
+
+    <div data-role="popup" id="new_detail1">
+		<img src="img/Varys.jpg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Varys</p>
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">172950293</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">varys4213@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">45</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Information Collection</p>
+
+		<br>
+
+		<textarea></textarea>
+		<a data-role="button" data-rel="popup" href="#alert" data-position-to="window">Send Friend Request</a>
+
+		<div data-role="popup" id="alert">
+			<h3>Succeed</h3>
+			<p>Your Friend Request has been sent to varys4213@uni.abc.edu.au</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+
+		<br>
+    </div>
+
+    <div data-role="popup" id="new_detail2">
+		<img src="img/Arya Stark.png" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Arya Stark</p>
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">859405726</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">aryastark3872@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">15</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Assassin</p>
+		<br>
+
+		<textarea></textarea>
+		<a data-role="button" data-rel="popup" href="#alert2" data-position-to="window">Send Friend Request</a>
+
+		<div data-role="popup" id="alert2">
+			<h3>Succeed</h3>
+			<p>Your Friend Request has been sent to aryastark3872@uni.abc.edu.au</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+
+		<br>
+    </div>
+
+    <div data-role="popup" id="new_detail3">
+		<img src="img/Sansa Stark.jpg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Sansa Stark</p>	
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">736285940</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">sansastark3872@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">25</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Dressing</p>
+
+		<br>
+
+		<textarea></textarea>
+		<a data-role="button" data-rel="popup" href="#alert3" data-position-to="window">Send Friend Request</a>
+
+		<div data-role="popup" id="alert3">
+			<h3>Succeed</h3>
+			<p>Your Friend Request has been sent to sansastark3872@uni.abc.edu.au</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+
+		<br>
+    </div>
+
+	<div data-role="popup" id="search">
+		<textarea></textarea>
+		<a href="#list" data-rel="popup" data-role="button">Search</a>
+	</div>
+
+	<div data-role="popup" id="list" style="width: 200px">
+		<div style="margin-bottom: 30px">
+				<a href="#new_detail2" data-rel="popup" data-rel="button">
+				<img src="img/Arya Stark.png" style="width: 40px; float:left;"></a><p style="border-left:10px;">&nbsp;&nbsp;Arya Stark</p>
+		</div>
+		<div style="margin-bottom: 30px">
+				<a href="#new_detail3" data-rel="popup" data-rel="button">
+				<img src="img/Sansa Stark.jpg" style="width: 40px; float:left;"></a><p style="border-left:10px;">&nbsp;&nbsp;Sansa Stark</p>	
+		</div>
+	</div>    
+
+</div><!-- /page -->
+</body>
+</html>

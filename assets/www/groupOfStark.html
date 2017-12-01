@@ -1,0 +1,259 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>UniChat</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+
+<body> 
+<div data-role="page" id="home" data-theme="c">
+
+	<div data-role="content">
+
+		<img src="img/logo.png">
+
+		<br>
+
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#detail"  data-rel="popup"> <img src="img/Stark Family.jpg"> <h3>Stark Family</h3> </a> </li>
+		</ul>
+
+		<br>
+		
+
+
+
+
+		<div style="width: 100%; height: 120px;">
+			<div style="margin-bottom: 30px">
+				<a href="#aryadetail" data-rel="popup" data-rel="button">
+					<img src="img/Arya Stark.png" style="width: 40px; float:left;"></a>
+				<p style="border-left:10px;">&nbsp;&nbsp;Arya Stark</p>		
+			</div>
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>Winterfell, I'm back!</li>
+			</ul>
+		</div>
+
+		<div style="width: 100%; height: 120px;">
+			<div style="margin-bottom: 30px">
+				<a href="#sansadetail" data-rel="popup" data-rel="button">
+				<img src="img/Sansa Stark.jpg" style="width: 40px; float:left;"></a>
+				<p style="border-left:10px;">&nbsp;&nbsp;Sansa Stark</p>	
+			</div>
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>Welcome home, Arya.</li>
+			</ul>
+		</div>
+
+		<div style="width: 100%; height: 120px; text-align: right;">
+			<img src="img/Jon Snow.jpg" style="width: 40px; margin-bottom: -10px">
+			<ul data-role="listview" data-inset="true" style="width: 60%; position: absolute; right: 20px;">
+				<li>Welcome back.</li>
+			</ul>
+		</div>
+
+		<div style="width: 100%; height: 120px;">
+			<div style="margin-bottom: 30px">
+				<a href="#brandetail" data-rel="popup" data-rel="button">
+				<img src="img/Bran Stark.jpg" style="width: 40px; float:left;"></a><p style="border-left:10px;">&nbsp;&nbsp;Three eye raven</p>	
+			</div>
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>I saw you. You are a warrior now.</li>
+			</ul>
+		</div>
+
+		<div style="width: 100%; height: 120px;text-align: right;">
+			<div style="margin-bottom: 50px">
+				<img src="img/Jon Snow.jpg" style="width: 40px; float:right;margin-bottom: 10px">	
+			</div>
+			<textarea></textarea>
+			<a data-role="button" data-rel="popup" href="#alert" data-position-to="window" style="width: 200px; float: right;">Send</a>
+		</div>	
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="home.html" rel="external"  data-icon="home" class="ui-btn-active ui-state-persist">Chats</a></li>
+				<li><a href="friend.html" rel="external" data-icon="plus">Friends</a></li>
+				<li><a href="group.html" rel="external" data-icon="grid" >Groups</a></li>
+				<li><a href="post.html" rel="external" data-icon="star">Posts</a></li>
+				<li><a href="profile.html" rel="external" data-icon="gear">Profile</a></li>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+	<div data-role="popup" id="detail">
+		<img src="img/Stark Family.jpg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Group Name</p>
+		<p style="font-size: 14px;">Stark Family</p>
+		<h4>Group members:</h4>
+	<div style="margin-left: 10px">
+		<div style="margin-bottom: 30px">
+			<a href="#aryadetail" data-rel="popup" data-rel="button">
+				<img src="img/Arya Stark.png" style="width: 40px; float:left;">
+			</a>
+			<p style="border-left:10px;">&nbsp;&nbsp;Arya Stark</p>
+		</div>
+		<div style="margin-bottom: 30px">
+			<a href="profile.html" rel="external">
+				<img src="img/Jon Snow.jpg" style="width: 40px; float:left;">
+			</a>
+			<p style="border-left:10px;">&nbsp;&nbsp;Jon Snow</p>
+		</div>
+		<div style="margin-bottom: 30px">
+			<a href="#sansadetail" data-rel="popup" data-rel="button">
+				<img src="img/Sansa Stark.jpg" style="width: 40px; float:left;">
+			</a>
+			<p style="border-left:10px;">&nbsp;&nbsp;Sansa Stark</p>
+		</div>
+		<div style="margin-bottom: 30px">
+			<a href="#brandetail" data-rel="popup" data-rel="button">
+				<img src="img/Bran Stark.jpg" style="width: 40px; float:left;">
+			</a>
+			<p style="border-left:10px;">&nbsp;&nbsp;Three eye raven</p></div>
+	</div>
+		<a data-role="button" href="#change" data-rel="popup" style="margin-left: 5px; margin-right: 5px">change group name</a>
+		<a data-role="button" href="#invite" data-rel="popup" style="margin-left: 5px; margin-right: 5px">invite new friends</a>
+
+    </div>
+
+    <div data-role="popup" id="change">
+		<img src="img/Stark Family.jpg" style="width: 200px;">
+
+		<br>
+
+		<p style="font-size: 25px; font-weight: bold;">Group Name</p>
+		<p style="font-size: 14px;">Stark Family</p>
+
+
+		<textarea style="width: 200px;"></textarea>
+		<a data-role="button" data-rel="popup" href="#alert" data-position-to="window" style="width: 200px;">Change group name</a>
+
+		<div data-role="popup" id="alert">
+			<h3>Succeed</h3>
+			<p>The group name has been changed.</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+    </div>
+
+    <div data-role="popup" id="invite" style="width: 250px;">
+		<div data-demo-html="true">
+			<form style="width: 225px; margin-left: 12px">
+				<fieldset data-role="controlgroup">
+					<legend>Friends:</legend>
+					<input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a" style="width: 225px;">
+					<label for="checkbox-v-2a">Daenerys Targaryen</label>
+					<input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b" style="width: 225px;">
+					<label for="checkbox-v-2b">Samwell Tarly</label>
+					<input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c" style="width: 225px;">
+					<label for="checkbox-v-2c">Tony Stark</label>
+					<input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d" style="width: 225px;">
+					<label for="checkbox-v-2d">Tyrion Lanister</label>
+				</fieldset>
+			</form>
+		</div>
+
+		<a data-role="button" data-rel="popup" href="#alert2" data-position-to="window" style="width: 200px; margin-left: 25px">Invite</a>
+
+		<div data-role="popup" id="alert2">
+			<h3>Succeed</h3>
+			<p>Invitation sended.</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+    </div>
+
+    <div data-role="popup" id="aryadetail">
+		<img src="img/Arya Stark.png" style="width: 200px;">
+		<br>
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Arya Stark</p>
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">859405726</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">aryastark3872@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">15</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Assassin</p>
+		<br>
+		<textarea></textarea>
+		<a data-role="button" data-rel="popup" href="#alert1" data-position-to="window">Send Friend Request</a>
+		<div data-role="popup" id="alert1">
+			<h3>Succeed</h3>
+			<p>Your Friend Request has been sent to aryastark3872@uni.abc.edu.au</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+		<br>
+    </div>
+
+    <div data-role="popup" id="sansadetail">
+		<img src="img/Sansa Stark.jpg" style="width: 200px;">
+		<br>
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Sansa Stark</p>	
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">736285940</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">sansastark3872@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">25</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Dressing</p>
+		<br>
+		<textarea></textarea>
+		<a data-role="button" data-rel="popup" href="#alert2" data-position-to="window">Send Friend Request</a>
+		<div data-role="popup" id="alert2">
+			<h3>Succeed</h3>
+			<p>Your Friend Request has been sent to sansastark3872@uni.abc.edu.au</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+		<br>
+    </div>
+
+    <div data-role="popup" id="brandetail">
+		<img src="img/Bran Stark.jpg" style="width: 200px;">
+		<br>
+		<p style="font-size: 25px; font-weight: bold;">Name</p>
+		<p style="font-size: 14px;">Three eye raven</p>	
+		<p style="font-size: 25px; font-weight: bold;">Student ID</p>
+		<p style="font-size: 14px;">873628124</p>
+		<p style="font-size: 25px; font-weight: bold;">Uni Email</p>
+		<p style="font-size: 14px;">branstark3872@uni.abc.au</p>
+		<p style="font-size: 25px; font-weight: bold;">age</p>
+		<p style="font-size: 14px;">18</p>
+		<p style="font-size: 25px; font-weight: bold;">Subject</p>
+		<p style="font-size: 14px;">Telescope</p>
+		<br>
+		<textarea></textarea>
+		<a data-role="button" data-rel="popup" href="#alert1" data-position-to="window">Send Friend Request</a>
+		<div data-role="popup" id="alert1">
+			<h3>Succeed</h3>
+			<p>Your Friend Request has been sent to branstark3872@uni.abc.edu.au</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+		</div>
+		<br>
+    </div>
+
+
+</div><!-- /page -->
+</body>
+</html>

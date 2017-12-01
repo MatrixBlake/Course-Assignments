@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>UniChat</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+
+<body> 
+<div data-role="page" id="home" data-theme="c">
+
+	<div data-role="content">
+
+		<img src="img/logo.png">
+		<br>
+		<br>
+
+		<ul data-role="listview" data-filter="true">
+			<li><a href="postSamwellTarly.html"  data-transition="slidedown" rel="external"> <img src="img/Samwell Tarly.jpeg"> <h3>How to cure greyscale</h3> <br> <p>[Public] Samwell Tarly</p> </a> </li>
+
+			<li><a href="#limited"  data-rel="popup"> <img src="img/Tony Stark.jpeg"> <h3>Captain America is our enemy now!</h3> <br> <p>[Limited] Tony Stark</p> </a> </li>
+
+			<li><a href="#private"  data-rel="popup" > <img src="img/Daenerys Targaryen.jpg"> <h3>Daenerys Targaryen</h3> <br> <p>[Private] Daenerys Targaryen</p> </a> </li>
+
+		<br>
+		<a href="#create" data-role="button" data-rel="popup"> Create a Post </a>
+			
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="home.html" rel="external" data-icon="home">Chats</a></li>
+				<li><a href="friend.html" rel="external" data-icon="plus" >Friends</a></li>
+				<li><a href="group.html" rel="external" data-icon="grid">Groups</a></li>
+				<li><a href="post.html" class="ui-btn-active ui-state-persist" rel="external" data-icon="star" >Posts</a></li>
+				<li><a href="profile.html" rel="external" data-icon="gear">Profile</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+	<div data-role="popup" id="private" style="width: 200px">
+		<h3>Failed</h3>
+		<p>It is a private post.</p>
+		<br>
+		<a data-role="button" href="#" data-rel="back" style="width: 100px; margin-left: 50px">Ok</a>
+	</div>
+
+	<div data-role="popup" id="limited" style="width: 200px">
+		<h3>Failed</h3>
+		<p>You are not on the list!</p>
+		<br>
+		<a data-role="button" href="#" data-rel="back" style="width: 100px; margin-left: 50px">Ok</a>
+	</div>	
+
+	<div data-role="popup" id="create">
+		<h4>Please choose the type of the post:</h4>
+		<a href="#text" data-role="button" data-rel="popup"> text </a>
+		<a href="#picture" data-role="button" data-rel="popup"> picture </a>
+		<a href="#video" data-role="button" data-rel="popup"> video </a>
+	</div><!-- /page -->
+
+	<div data-role="popup" id="text" style="width:300px; height: 500px">
+		<textarea style="height: 450px"></textarea>
+		<a href="#finish" data-role="button" data-rel="popup"> submit </a>
+	</div>
+
+	<div data-role="popup" id="picture" style="width: 250px">
+		<div style="width: 250px; height: 250px"></div>
+		<a data-role="button"> choose pictures </a>
+		<a href="#finish" data-role="button" data-rel="popup"> submit </a>
+	</div>
+
+	<div data-role="popup" id="video">
+		<textarea>paste the video link here</textarea>
+		<a href="#finish" data-role="button" data-rel="popup"> submit </a>
+	</div>
+
+	<div data-role="popup" id="finish" style="width: 200px">
+		<p> Set Privacy </p>
+		<a href="#end" data-role="button" data-rel="popup"> public </a>
+		<a href="#limited2" data-role="button" data-rel="popup"> limited </a>
+		<a href="#end" data-role="button" data-rel="popup"> private </a>
+	</div>
+
+	<div data-role="popup" id="limited2" style="width: 250px;">
+		<div data-demo-html="true">
+			<form style="width: 225px; margin-left: 12px">
+				<fieldset data-role="controlgroup">
+					<legend>Choose who can read this post:</legend>
+					<input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a" style="width: 225px;">
+					<label for="checkbox-v-2a">Daenerys Targaryen</label>
+					<input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b" style="width: 225px;">
+					<label for="checkbox-v-2b">Samwell Tarly</label>
+					<input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c" style="width: 225px;">
+					<label for="checkbox-v-2c">Tony Stark</label>
+					<input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d" style="width: 225px;">
+					<label for="checkbox-v-2d">Tyrion Lanister</label>
+				</fieldset>
+			</form>
+		</div>
+		<a data-role="button" data-rel="popup" href="#end" data-position-to="window" style="width: 200px; margin-left: 25px">Set Limited</a>
+	</div>
+
+	<div data-role="popup" id="end">
+			<h3>Succeed</h3>
+			<p>The post has been created.</p>
+			<br>
+			<a data-role="button" href="#" data-rel="back">Ok</a>
+	</div>	
+
+</body>
+</html>
